@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens de fundo</title>
     <style>
+        /*body{
+        
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-repeat:no-repeat;
+            background-size: contain;
+        }*/
+        body{
+            background-image: url(imagens/wallpaper002.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        div#container{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
         div.quadrado{
             display: inline-block;
             margin: 5px;
@@ -19,7 +38,7 @@
             background-color: skyblue;
         }
         div#q2{
-            background-image: linear-gradient(to bottom, yellow, orange);
+            background-image: linear-gradient(to bottom, yellow, red);
         }
         div#q3{
             background-image: url(imagens/pattern003.png);
@@ -27,10 +46,12 @@
     </style>
 </head>
 <body>
-
-    <div class="quadrado" id="q1"></div>
-    <div class="quadrado" id="q2"></div>
-    <div class="quadrado" id="q3"></div>
+    
+    <div id="container">
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+    </div>
     
 </body>
 </html>
